@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:session7_gdg/home_screen.dart';
+import 'package:session7_gdg/navig_bar.dart';
 
 void main (){
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "first app",
-      home: HomeScreen(),
+      home: NavigBar(),
     );
   }
 }
