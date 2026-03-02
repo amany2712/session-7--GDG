@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:session7_gdg/navig_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:session7_gdg/screens/home_screen.dart';
 
-void main (){
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -12,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "first app",
-      home: NavigBar(),
+      theme: ThemeData(textTheme: GoogleFonts.tenorSansTextTheme()),
+      home: HomeScreen(),
     );
   }
 }
